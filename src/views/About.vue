@@ -35,6 +35,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+   perspective: 500px;   /* 透视 眼睛距离屏幕的距离 */ 
+    transform-style: preserve-3d; 
   .btn{
     width: 80px;
     height: 50px;
@@ -53,12 +55,43 @@
     position: absolute;
     top: 200px;
     left: 680px;
+     /* 透视:近大远小的3D效果(只是模拟出的效果,本质上还是2D) */          
+    perspective: 500px;   /* 透视 眼睛距离屏幕的距离 */ 
+    transform-style: preserve-3d;   /* 让盒子里的子盒子保持3D效果(真3D)(默认flat:平面上的扁平化) */  
     .card{
       width: 160px;
       height: 200px;
       background-color: pink;
       position: absolute;
       transform-origin: 50% 1020%;
+    }
+    .card1:hover{
+       transition: transform 0.2s;
+       transform: translateZ(6px)  rotate(-15deg);
+    }
+    .card2:hover{
+       transition: transform 0.2s;
+       transform: translateZ(6px)  rotate(-10deg);
+    }
+    .card3:hover{
+       transition: transform 0.2s;
+       transform: translateZ(6px)  rotate(-5deg);
+    }
+    .card4:hover{
+       transition: transform 0.2s;
+       transform: translateZ(6px)  rotate(0deg);
+    }
+    .card5:hover{
+       transition: transform 0.2s;
+       transform: translateZ(6px)  rotate(5deg);
+    }
+    .card6:hover{
+       transition: transform 0.2s;
+       transform: translateZ(6px)  rotate(10deg);
+    }
+    .card7:hover{
+       transition: transform 0.2s;
+       transform: translateZ(6px)  rotate(15deg);
     }
     .card1{
        transform: rotate(-15deg);
