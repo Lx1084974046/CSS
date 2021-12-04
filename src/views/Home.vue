@@ -6,6 +6,7 @@
 </template>
 
 <script>
+import  { initStar } from "../utils/starry";
 export default {
   name: '',
   data() {
@@ -13,7 +14,10 @@ export default {
   },
   computed: {},
   watch: {},
-  methods: {}
+  methods: {},
+  created(){
+    initStar()
+  }
 };
 </script>
 
@@ -25,5 +29,16 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  span{
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    background-color: yellow;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
 }
 </style>

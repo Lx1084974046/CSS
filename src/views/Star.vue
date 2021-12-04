@@ -3,7 +3,6 @@
 </template>
 
 <script>
-import '@/utils/starry.js';
 export default {
   name: '',
   data() {
@@ -11,7 +10,8 @@ export default {
   },
   computed: {},
   watch: {},
-  methods: {}
+  methods: {},
+  mounted(){}
 };
 </script>
 

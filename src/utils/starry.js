@@ -1,7 +1,8 @@
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 // import Stats from "@/utils/stats.js";
-(function () {
+export const initStar = 
+function () {
   'use strict'
   /* 	'To actually be able to display anything with Three.js, we need three things:
 		A scene, a camera, and a renderer so we can render the scene with the camera.'
@@ -188,4 +189,4 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
     mouseX = e.clientX - windowHalfX
     mouseY = e.clientY - windowHalfY
   }
-})()
+}
